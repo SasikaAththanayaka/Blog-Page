@@ -12,6 +12,7 @@ function Header(){
                 
                 </Nav>
                 <Button href="/login" variant="outline-primary" style={{marginRight:"10px"}}>Add Post</Button>{' '}
+                <Button href="/Register" variant="outline-primary" style={{marginRight:"10px"}}>Register</Button>{' '}
                 <Button href="/login" variant="outline-primary" style={{marginRight:"10px"}}>Login</Button>{' '}
             </Navbar>
             

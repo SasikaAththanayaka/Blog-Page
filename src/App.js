@@ -10,6 +10,7 @@ import { BrowserRouter, Route, Switch,Redirect } from "react-router-dom"
 import Login from './Components/Login';
 import Footer from './Components/Footer';
 import SinglePost from './Components/SinglePost';
+import Register from './Components/Register';
 
 function App() {
   //const [ posts , setPosts] =useState([]);
@@ -24,6 +25,7 @@ function App() {
           <Route path="/About"><About /></Route>
           <Route path="/ContactUs"><ContactUs /></Route>
           <Route path="/login"><Login /></Route>
+          <Route path="/Register"> <Register/></Route>
           <Route path="/SinglePost/:id"> <SinglePost /></Route>
           <Redirect to="/"><Home /></Redirect>
         </Switch>
