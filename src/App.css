@@ -56,13 +56,18 @@
 }
 .form{
   color: white;
-  padding-top: 20px;
+  margin-top: 30px;
   margin-bottom: 30px;
-  margin-right: 35%;
-  margin-left: 35%;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-right: 30%;
+  padding-left: 30%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-radius: 50px;
   font-size: medium;
-  border-radius: 50%;
-
+  
+  background-color: #343a40;
 }
 .footer{
   background-color: #343a40;

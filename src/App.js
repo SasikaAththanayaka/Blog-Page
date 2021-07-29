@@ -11,6 +11,7 @@ import Login from './Components/Login';
 import Footer from './Components/Footer';
 import SinglePost from './Components/SinglePost';
 import Register from './Components/Register';
+import AddPost from './Components/AddPost';
 
 function App() {
   //const [ posts , setPosts] =useState([]);
@@ -26,6 +27,7 @@ function App() {
           <Route path="/ContactUs"><ContactUs /></Route>
           <Route path="/login"><Login /></Route>
           <Route path="/Register"> <Register/></Route>
+          <Route path="/AddPost"><AddPost /></Route>
           <Route path="/SinglePost/:id"> <SinglePost /></Route>
           <Redirect to="/"><Home /></Redirect>
         </Switch>

@@ -11,7 +11,7 @@ function Header(){
                     <Nav.Link href="/ContactUs">Contact Us</Nav.Link>
                 
                 </Nav>
-                <Button href="/login" variant="outline-primary" style={{marginRight:"10px"}}>Add Post</Button>{' '}
+                <Button href="/AddPost" variant="outline-primary" style={{marginRight:"10px"}}>Add Post</Button>{' '}
                 <Button href="/Register" variant="outline-primary" style={{marginRight:"10px"}}>Register</Button>{' '}
                 <Button href="/login" variant="outline-primary" style={{marginRight:"10px"}}>Login</Button>{' '}
             </Navbar>
