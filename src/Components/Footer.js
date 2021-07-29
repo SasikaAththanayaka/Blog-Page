@@ -1,5 +1,4 @@
 import React from 'react';
-//import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <div className="footer">
@@ -9,21 +8,20 @@ const Footer = () => {
                     <h5>Links</h5>
                     <ul className="list-unstyled">
                         <li><a to="/home"> Home</a></li>
-                        <li><a to="/aboutus">About</a></li>
-                        <li><a to="/menu">Menu</a></li>
-                        <li><a to="/contactus">Contact</a></li>
+                        <li><a to="/About">About</a></li>
+                        <li><a to="/Contactus">Contact Us</a></li>
                     </ul>
                 </div>
                 <div className="col-7 col-sm-5">
                     <h5>Our Address</h5>
                     <address>
-		              Department of Statistics and Computer Science<br />
-		              Faculty of Science<br />
-		              University of Peradeniya<br />
+                        No :28<br />
+                        Kandy Road<br />
+                        Kandy<br />
 		              <i className="fa fa-phone fa-lg"></i>: +94 81 123 4568<br />
 		              <i className="fa fa-fax fa-lg"></i>: +94 81 123 4568<br />
 		              <i className="fa fa-envelope fa-lg"></i>: <a href="mailto:computerscience@sci.pdn.ac.lk">
-                         computerscience@sci.pdn.ac.lk</a>
+                         sasi@gmail.com</a>
                     </address>
                 </div>
                 <div className="col-12 col-sm-4 align-self-center">
@@ -39,7 +37,7 @@ const Footer = () => {
             </div>
             <div className="row justify-content-center">             
                 <div className="col-auto">
-                    <p>© Copyright 2020 Computer Society - University of Peradeniya</p>
+                    <p>© Copyright 2020 Sasi </p>
                 </div>
             </div>
         </div>

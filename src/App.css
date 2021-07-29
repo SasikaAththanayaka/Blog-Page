@@ -37,10 +37,29 @@
     transform: rotate(360deg);
   }
 }
+.contactus{
+  text-align: center;
+  color: white;
+
+}
+.singlepost{
+  color: white;
+  background-color: #343a40;
+  padding: 50px;
+  margin: 40px;
+}
+.jambo{
+  margin-top: 15px;
+  text-align: center;
+  background-color: #343a40;
+  color: white;
+}
 .form{
+  color: white;
   padding-top: 20px;
-  margin-right: 5%;
-  margin-left: 25%;
+  margin-bottom: 30px;
+  margin-right: 35%;
+  margin-left: 35%;
   font-size: medium;
   border-radius: 50%;
 

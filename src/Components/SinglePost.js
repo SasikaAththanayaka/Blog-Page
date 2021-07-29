@@ -1,18 +1,20 @@
 import React from 'react'
-import {Card} from 'react-bootstrap';
+import {Card,CardColumns,Figure} from 'react-bootstrap';
+import { useParams } from 'react-router-dom';
+import Api from '../API/Api';
 function SinglePost() {
+    const {id} =useParams();
+    const {data} =Api(`https://jsonplaceholder.typicode.com/posts/`+ id);
+    console.log(id);
     return (
         <div className="container">
-            <Card style={{margin: '25px' ,height:"2%" }}>
-            <Card.Img variant="top"  src='https://picsum.photos/200/300?random=1'  />
-            <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                Some quick example text to build on the card title and make up the bulk of
-                the card's content.
-                </Card.Text>
-            </Card.Body>
-            </Card>
+            <div className="singlepost">
+            <img src="https://picsum.photos/400"/>
+            <br/>
+            <div className="header-text" >{data.title}</div>
+            <br/>
+            <p>{data.body}</p>
+        </div>
         </div>
     )
 }
