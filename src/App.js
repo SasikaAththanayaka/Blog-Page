@@ -12,9 +12,7 @@ import Register from './Components/Register';
 import AddPost from './Components/AddPost';
 
 function App() {
-  //const [ posts , setPosts] =useState([]);
-  
-  
+ 
   return (
     <div className="App">
       <Header/>

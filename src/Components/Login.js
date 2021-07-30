@@ -6,7 +6,7 @@ const [email,setEmail] =useState('');
 const [password,setPassword] =useState('');
 
 const formHandler =(e) =>{
-    e.preventDefault()
+    e.preventDefault();
     const n ={
         email,
         password
