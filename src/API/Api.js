@@ -1,4 +1,3 @@
-import React from 'react'
 import { useState,useEffect } from 'react'
 import axios from 'axios';
 
@@ -17,7 +16,7 @@ function Api(url) {
         })
         },1000);
         
-      },[data]);
+      },[url]);
     return {data};
 }
 

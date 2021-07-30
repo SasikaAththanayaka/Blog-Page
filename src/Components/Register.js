@@ -1,11 +1,15 @@
+import axios from 'axios';
 import React from 'react'
 import { useState } from 'react';
 import {Button,Form} from 'react-bootstrap';
+import { useHistory } from 'react-router-dom';
 function Register() {
     const [fName,setFName]=useState("");
     const [lName,setLName]=useState("");
     const [email,setEmail]=useState("");
     const [password,setPassword]=useState("");
+    const history=useHistory();
+
     const register =(e) =>{
         e.preventDefault();
         const n={
@@ -14,7 +18,13 @@ function Register() {
             email,
             password
         };
-        console.log(n);
+        axios.post("https://jsonplaceholder.typicode.com/posts",n).then(res =>{
+        //console.log(res);
+        alert("Registered");
+        history.push("/");
+    }).catch(err=>{
+        console.log(err);
+      })
     }
     return (
         <div className="form">

@@ -1,11 +1,13 @@
+import axios from 'axios';
 import React from 'react'
 import { useState } from 'react';
 import {Button,Form} from 'react-bootstrap';
+import { useHistory } from 'react-router-dom';
 function AddPost() {
     const [title,setTitle] =useState("");
     const [writer,setWriter] =useState('');
     const [content,setContent] =useState('');
-
+    const history=useHistory();
     const addPost =(e) =>{
         e.preventDefault();
         const n ={
@@ -13,7 +15,14 @@ function AddPost() {
             writer,
             content
         }
-        console.log(n);
+        
+        axios.post("https://jsonplaceholder.typicode.com/posts",n).then(res =>{
+            //console.log(res);
+            alert("Added");
+            history.push("/");
+        }).catch(err=>{
+            console.log(err);
+          })
     }
     return (
         <div className="form">
