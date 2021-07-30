@@ -6,6 +6,9 @@ function SinglePost() {
     const {id} =useParams();
     const {data} =Api(`https://jsonplaceholder.typicode.com/posts/`+ id);
     console.log(id);
+    if(!data){
+        return "loading................"
+    }
     return (
         <div className="container">
             <div className="singlepost">

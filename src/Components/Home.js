@@ -23,6 +23,9 @@ function Home() {
         );
     })
     //console.log(props.data);
+    if(!data){
+        return "loading................"
+    }
     return (
         <div className="container">
             
