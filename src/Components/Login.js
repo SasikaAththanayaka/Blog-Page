@@ -11,7 +11,7 @@ const formHandler =(e) =>{
         email,
         password
     }
-    console.log(n);
+    alert(n);
 }
     return (
         <div className="form">

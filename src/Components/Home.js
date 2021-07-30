@@ -9,7 +9,7 @@ function Home() {
     const {data} =Api("https://jsonplaceholder.typicode.com/posts");
 
     const [pageNumber,setPageNumber] =useState(0);
-    const userPerPage=8;
+    const userPerPage=6;
     const pageVisited=pageNumber*userPerPage;
     const pageCount=Math.ceil(data.length/userPerPage);
 

@@ -1,6 +1,4 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { useEffect } from 'react';
-
 import './App.css';
 import Header from './Components/Header';
 import About from './Components/About';
