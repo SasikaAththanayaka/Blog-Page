@@ -1,8 +1,7 @@
 import React from 'react';
-import { useState } from 'react';
-import { useEffect } from 'react';
+import { useState , useEffect} from 'react';
 import { useContext } from 'react';
-import {Navbar,Nav,Button,Jumbotron,Container} from 'react-bootstrap';
+import {Navbar,Nav,Button} from 'react-bootstrap';
 import { User } from '../App';
 function Header(){
     
@@ -10,7 +9,7 @@ function Header(){
     const [admin,setAdmin]=useState();
     useEffect(()=>{
         setAdmin(user);
-    },[]);
+    },[user]);
     return(
         <div className="header">
             <Navbar bg="dark" variant="dark" sticky="top">

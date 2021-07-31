@@ -1,5 +1,4 @@
 import React from 'react'
-import {Card,CardColumns,Figure} from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
 import Api from '../API/Api';
 function SinglePost() {
@@ -12,7 +11,7 @@ function SinglePost() {
     return (
         <div className="container">
             <div className="singlepost">
-            <img className="singleImg" src="https://picsum.photos/400"/>
+            <img className="singleImg" src="https://picsum.photos/400" alt=""/>
             <br/>
             <br/>
             <div className="header-text" >{data.title}</div>

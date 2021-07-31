@@ -11,16 +11,15 @@ import Footer from './Components/Footer';
 import SinglePost from './Components/SinglePost';
 import Register from './Components/Register';
 import AddPost from './Components/AddPost';
-
 const name="sasika";
 export const User =React.createContext(name);
 
 function App() {
  
+
     return (
     <div className="App">
       <BrowserRouter> 
-      
       <User.Provider value={""}>
       <Header/>
         <Switch>
