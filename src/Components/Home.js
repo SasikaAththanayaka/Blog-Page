@@ -42,7 +42,7 @@ function Home() {
                     </p>
                 </Container>
             </Jumbotron>
-            <div className="container">
+            <div className="Cards">
                <CardDeck>
                     {displayPosts}
                 </CardDeck>

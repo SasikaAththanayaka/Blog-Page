@@ -23,6 +23,8 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  border-radius: 5px;
+  padding: 10px;
 }
 
 .App-link {
@@ -37,6 +39,10 @@
     transform: rotate(360deg);
   }
 }
+.header{
+  border-radius: 5px;
+  border: 1px solid blue;
+}
 .contactus{
   text-align: center;
   color: white;
@@ -45,14 +51,18 @@
 .singlepost{
   color: white;
   background-color: #343a40;
-  padding: 50px;
+  padding: 10px;
   margin: 40px;
+  border: 1px solid blue;
+  border-radius: 5px;
 }
 .jambo{
   margin-top: 15px;
   text-align: center;
   background-color: #343a40;
+  border: 1px solid blue;
   color: white;
+  border-radius: 5px;
 }
 .form{
   color: white;
@@ -66,22 +76,20 @@
   padding-bottom: 2%;
   border-radius: 50px;
   font-size: medium;
-  
+  border: 1px solid blue;
   background-color: #343a40;
 }
 .footer{
   background-color: #343a40;
-  margin: 0px auto;
-  padding: 20px 0px 20px 0px;
+  border-radius: 5px;
+  padding: 20px 0px 10px 0px;
   color: white;
-  
+  border: 1px solid blue;
 }
 .paginate {
-  margin-top: 35px;
-  padding-left: 35px;
-  padding-bottom: 25px;
+  margin-top: 15px;
+  margin-bottom: 35px;
   color: #f7f7fd;
- 
 }
 .paginationBttn{
   width: 80%;
@@ -108,6 +116,20 @@ cursor: pointer;
 
 .paginationActive a {
   color: white;
-  background-color: #fd2732;
+  background-color:#1d1f24;
 }
-
+.cardImg{
+  height: 15rem;
+  width: 100%;
+}
+.Cards{
+  background-color:#3d4247;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid blue;
+}
+.singleImg{
+  width: 100%;
+  height: 25rem;
+  border-radius: 10px;
+}

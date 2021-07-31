@@ -12,9 +12,12 @@ function SinglePost() {
     return (
         <div className="container">
             <div className="singlepost">
-            <img src="https://picsum.photos/400"/>
+            <img className="singleImg" src="https://picsum.photos/400"/>
+            <br/>
             <br/>
             <div className="header-text" >{data.title}</div>
+            <br/>
+            <p>Written By:{data.id}</p>
             <br/>
             <p>{data.body}</p>
         </div>
