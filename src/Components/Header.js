@@ -1,15 +1,16 @@
 import React from 'react';
-import { useState , useEffect} from 'react';
+//import { useState , useEffect} from 'react';
 import { useContext } from 'react';
 import {Navbar,Nav,Button} from 'react-bootstrap';
-import { User } from '../App';
+import { Context } from '../Context/Context';
+
 function Header(){
     
-    const user=useContext(User);
-    const [admin,setAdmin]=useState();
-    useEffect(()=>{
+    const {user}=useContext(Context);
+    //const [admin,setAdmin]=useState();
+   /* useEffect(()=>{
         setAdmin(user);
-    },[user]);
+    },[user]);*/
     return(
         <div className="header">
             <Navbar bg="dark" variant="dark" sticky="top">
@@ -20,7 +21,7 @@ function Header(){
                     <Nav.Link href="/ContactUs">Contact Us</Nav.Link>
                 
                 </Nav>
-                { admin ? (<Button href="/AddPost" variant="outline-primary" style={{marginRight:"10px"}}>Add Post</Button>)
+                { user ? (<Button href="/AddPost" variant="outline-primary" style={{marginRight:"10px"}}>Add Post</Button>)
                 : (<> <Button href="/Register" variant="outline-primary" style={{marginRight:"10px"}}>Register</Button>{' '}
                 <Button href="/login" variant="outline-primary" style={{marginRight:"10px"}}>Login</Button>{' '}</>)}
                 

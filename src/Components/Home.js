@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+ import React, { useState } from 'react'
 import Post from './Post'
 import {CardDeck,Jumbotron,Container} from 'react-bootstrap';
 import ReactPaginate from 'react-paginate';

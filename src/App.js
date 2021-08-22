@@ -11,29 +11,27 @@ import Footer from './Components/Footer';
 import SinglePost from './Components/SinglePost';
 import Register from './Components/Register';
 import AddPost from './Components/AddPost';
-const name="sasika";
-export const User =React.createContext(name);
+import { useContext } from "react";
+import { Context } from "./Context/Context";
 
 function App() {
  
-
+  const {user}=useContext(Context);
     return (
     <div className="App">
-      <BrowserRouter> 
-      <User.Provider value={""}>
+      <BrowserRouter>  
       <Header/>
         <Switch>
           <Route exact path="/"><Home /></Route>
-          <Route path="/Register"> <Register/></Route>
-          <Route path="/login"><Login /></Route>
-          <Route path="/AddPost"> <AddPost /></Route>
+          <Route path="/Register"> {user ? <Home/> : <Register/>}</Route>
+          <Route path="/login">{user ? <Home/> : <Login/>}</Route>
+          <Route path="/AddPost"> {user ? <Home/> : <AddPost/>}</Route>
           <Route path="/SinglePost/:id"> <SinglePost /></Route>
           <Route path="/About"><About /></Route>
           <Route path="/ContactUs"><ContactUs /></Route>
           <Redirect to="/"><Home /></Redirect>
         </Switch>
         <Footer/>
-        </User.Provider>
       </BrowserRouter>
       
     </div>
